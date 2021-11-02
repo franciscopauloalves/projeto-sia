@@ -163,3 +163,15 @@ transform: rotate(135deg);
 }
 
 }
+
+.imagens {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.imagens > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}

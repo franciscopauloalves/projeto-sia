@@ -59,7 +59,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     color: var(--cor1);
-    background: var(--cor6);
+    background: var(--cor5);
     border-bottom: .1rem solid var(--cor3);
     box-shadow: 1px 5px 7px rgba(0, 0, 0, .2);
 }

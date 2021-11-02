@@ -4,12 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
 
 :root {
---cor1:#c5c6f8;
---cor2:#7e88e6;
---cor3:#403ddc;
---cor4:#0f1188;
---cor5:#040346;
---cor6:#01031b;
+--cor0:white;
+--cor1:#fccfcf;
+--cor2:#fca8a8;
+--cor3:#f57676;
+--cor4:#d43535;
+--cor5:#8d0f0f;
+--cor6:#2e0303;
+--cor7:black;
 
 --font-padrao:verdana, helvetica, sans-serif;
 --font-principal:'Montserrat', sans-serif;
@@ -19,8 +21,27 @@
 
 * {
     margin: 0px;
-    padding: 0px; 
+    padding: 0px;
 }
+
+body {
+    background:var(--cor0);
+}
+
+img {
+    max-width: 80%;
+    display: block;
+    padding: 2px;
+    border-radius: 25%;
+    box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.336);
+}
+
+img:hover {
+    background: var(--cor6);
+    max-width: 100%;
+    cursor: pointer;
+}
+
 
 a {
     color: var(--cor4);
@@ -30,21 +51,26 @@ a {
 
 p {
     padding: 1rem;
-    text-align: center;
-    color: var(--cor1);
+    color: var(--cor3);
     font-style:normal;
     font-family: var(--font-principal);
 }
 
+section p {
+    color: var(--cor5);
+    padding: 10px;
+}
+
+
 h1 {
     font-family: var(--font-principal);
-    color: var(--cor4);
+    color: var(--cor6);
 }
 
 
 a:hover {
     background: var(--cor2);
-    color: var(--cor4);
+    color: var(--cor5);
 }
 
 #logo {
@@ -61,7 +87,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     color: var(--cor1);
-    background: var(--cor5);
+    background: var(--cor6);
     border-bottom: .1rem solid yellow;
     box-shadow: 1px 5px 7px rgba(0, 0, 0, .2);
 }
@@ -69,7 +95,6 @@ a:hover {
 #menu {
     display: flex;
     list-style: none;
-    color: var(--cor1);
     gap: .5rem;
     padding: 5px;
 }
@@ -175,11 +200,6 @@ h1 {
     font-size: 1em;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-    padding: 2px;
-}
 .tecnicas {
     display: flex;
     flex-wrap: wrap;
@@ -206,4 +226,10 @@ img {
     flex: 1 1 200px;
     margin: 10px;
     padding: 2px;
+}
+
+footer {
+    background:var(--cor7);
+    padding: 10px;
+    text-align: center;
 }

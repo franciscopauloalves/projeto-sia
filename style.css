@@ -26,6 +26,8 @@
 
 body {
     background:var(--cor0);
+    width: 90%;
+    margin: 0 auto;
 }
 
 img {
@@ -54,17 +56,20 @@ p {
     color: var(--cor3);
     font-style:normal;
     font-family: var(--font-principal);
+    text-align: justify;
 }
 
 section p {
     color: var(--cor5);
     padding: 10px;
+    
 }
 
 
 h1 {
     font-family: var(--font-principal);
     color: var(--cor6);
+    text-align:justify;
 }
 
 
